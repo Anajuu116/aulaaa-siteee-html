@@ -205,3 +205,88 @@ a{
 .rodape-links ul a:hover{
     color: var(--cor-principal);
 }
+
+
+/*Campos de formulário*/
+
+.campo-grupo{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+
+.campo-label{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cor-text-suave);
+    letter-spacing: 0.3px;
+}
+
+.campo-input{
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid var(--cor-borda);
+    border-radius: var(--raio-sm);
+    font-size: 15px;
+    color: var(--cor-texto);
+    background-color: white;
+    transition: all var(--transicao);
+    outline: none;
+}
+
+.campo-input:focus{
+    border-color: var(--cor-principal);
+    box-shadow: 0 0 10px 3px rgba(232, 93, 38,0.25);
+}
+
+.campo-input::placeholder{
+    color: #bbb;
+}
+
+/*Botões*/
+
+.btn-primario{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: var(--raio-pilula);
+    font-size: 15px;
+    transition: all var(--transicao);
+    cursor: pointer;
+}
+
+.btn-primario:hover{
+    background-color: var(--cor-principal-hover);
+    transform: translateY(-2px);
+}
+
+.btn-primario:active{
+    background-color: #772d12;
+    transform: translateY(2px);
+}
+
+.btn-secundario{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+    padding: 14px 28px;
+    border-radius: var(--raio-pilula);
+    font-size: 15px;
+    transition: all var(--transicao);
+    cursor: pointer;
+}
+
+.btn-secundario:hover{
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
+}
